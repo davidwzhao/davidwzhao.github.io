@@ -4,6 +4,18 @@
 }
 
 @font-face {
+    font-family: "Bitter";
+    src: url('../fonts/Bitter/Bitter-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url('../fonts/Bitter/Bitter-Italic-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
     font-family: "Merriweather";
     src: url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
     font-weight: 400;
@@ -28,7 +40,7 @@
     font-family: "Merriweather";
     src: url('../fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
 }
 
 @font-face {
