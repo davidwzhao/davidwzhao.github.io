@@ -6,7 +6,10 @@ body {
     overflow-x: hidden;
     background-color: $white;
     color: $dark-grey;
-    font-family: sans-serif // TODO: fix this
+}
+
+body {
+    padding-bottom: 3rem;
 }
 
 .content {

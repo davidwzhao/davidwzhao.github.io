@@ -1,10 +1,20 @@
-.experience {
-    margin-bottom: -2.2rem;
+.experience_content.section_content {
+    // margin-top: -2.2rem;
+    // border: 2px solid red;
+
+    display: grid;
+    // flex-direction: column;
+    // flex-wrap: no-wrap;
+    // justify-content: space-between;
+
+    gap: 1.2rem 0rem;
 
     .job {
-        // display: block;
+
         margin-top: 0.8rem;
-        margin-bottom: 3rem;
+        margin-bottom: 0.8rem;
+
+        // border: 2px solid black;
 
         .job_company_dates{
             display: flex;
