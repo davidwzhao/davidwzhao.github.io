@@ -2,6 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: $white;
     color: $dark-grey;
     font-family: sans-serif // TODO: fix this
@@ -17,10 +19,12 @@ body {
 .header {
     background-color: $cyan-background;
 
+    width: 100vw;
+
     padding-top: 8vh;
     padding-bottom: 8vh;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     // margin-bottom: 100px;
 
@@ -33,12 +37,14 @@ body {
         max-width: 1200px;
 
         .intro_hello {
-            font-size: 54pt;
+            font-size: 5rem;
             font-weight: 200;
+
+            margin-bottom: 7rem;
         }
 
         .intro_paragraph {
-            font-size: 24pt;
+            font-size: 2rem;
             font-weight: 300;
 
             width: 50%;
@@ -48,7 +54,7 @@ body {
             }
 
             @media (max-width: $small-width) {
-                width: 100%;
+                width: 90%;
             }
 
             line-height: 1.8;
@@ -61,11 +67,12 @@ body {
 }
 
 .section {
+    margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
 
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
 
     max-width: 1200px;
 
@@ -73,32 +80,41 @@ body {
     flex-wrap: wrap;
     // align-items: stretch;
 
-    margin-top: 60px;
+    @media (max-width: $medium-width) {
+        display: block;
+    }
 
     .section_title {
-        min-width: 200px;
+        // min-width: 200px;
         flex: 1 0 0;
 
-        padding-top: 24px;
+        padding-top: 2rem;
 
         font-family: Inter;
         font-weight: 600;
-        font-size: 18pt;
+        font-size: 1.6rem;
         color: $blue;
 
         // border: 4px solid black;
     }
 
     .section_content {
-        min-width: 500px;
+        display: block;
+        // min-width: 500px;
         flex: 4 0 0;
 
-        padding-top: 24px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        @media (max-width: $medium-width) {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
 
         font-family: Bitter;
-        font-size: 14pt;
+        font-size: 1.2rem;
         font-weight: 350;
         line-height: 1.8;
         color: $dark-grey;
