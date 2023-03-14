@@ -1,55 +1,50 @@
-.experience_content.section_content {
-    // margin-top: -2.2rem;
-    // border: 2px solid red;
+.experience {
+    .section_content {
+        display: grid;
+        gap: 1.2rem 0rem;
 
-    display: grid;
-    // flex-direction: column;
-    // flex-wrap: no-wrap;
-    // justify-content: space-between;
+        .job {
 
-    gap: 1.2rem 0rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
 
-    .job {
+            // border: 2px solid black;
 
-        margin-top: 0.8rem;
-        margin-bottom: 0.8rem;
+            .job_company_dates{
+                display: flex;
+                justify-content: space-between;
+                // line-height: 1.8;
 
-        // border: 2px solid black;
+                // @media (max-width: $small-width) {
+                //     display: block;
+                // }
 
-        .job_company_dates{
-            display: flex;
-            justify-content: space-between;
-            // line-height: 1.8;
+                .job_company {
+                    .company_link {
+                        font-weight: 700;
+                        color: $dark-grey;
+                    }
+                }
 
-            // @media (max-width: $small-width) {
-            //     display: block;
-            // }
+                .job_dates {
+                    // float: right;
 
-            .job_company {
-                .company_link {
-                    font-weight: 700;
-                    color: $dark-grey;
+                    // font-family: Inconsolata;
+                    // font-weight: 400;
+                    font-size: 0.9rem;
+
+                    color: $slate;
                 }
             }
 
-            .job_dates {
-                // float: right;
+            .job_position {
+                // margin-top: 2rem;
+                // margin-bottom: 0.8em;
 
-                // font-family: Inconsolata;
-                // font-weight: 400;
-                font-size: 0.9rem;
+                // float: left;
+                // clear: left;
 
-                color: $slate;
             }
-        }
-
-        .job_position {
-            // margin-top: 2rem;
-            // margin-bottom: 0.8em;
-
-            // float: left;
-            // clear: left;
-
         }
     }
 }
