@@ -1,0 +1,45 @@
+.experience {
+    margin-bottom: -2.2rem;
+
+    .job {
+        // display: block;
+        margin-top: 0.8rem;
+        margin-bottom: 3rem;
+
+        .job_company_dates{
+            display: flex;
+            justify-content: space-between;
+            // line-height: 1.8;
+
+            // @media (max-width: $small-width) {
+            //     display: block;
+            // }
+
+            .job_company {
+                .company_link {
+                    font-weight: 700;
+                    color: $dark-grey;
+                }
+            }
+
+            .job_dates {
+                // float: right;
+
+                // font-family: Inconsolata;
+                // font-weight: 400;
+                font-size: 0.9rem;
+
+                color: $slate;
+            }
+        }
+
+        .job_position {
+            // margin-top: 2rem;
+            // margin-bottom: 0.8em;
+
+            // float: left;
+            // clear: left;
+
+        }
+    }
+}
