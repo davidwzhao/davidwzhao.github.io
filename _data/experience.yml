@@ -5,10 +5,20 @@
 
 - company: RelationalAI
   url: https://relational.ai/
-  time: March - June 2021
+  time: Mar - Jun 2021
   position: Software Engineer Intern
 
 - company: University of Sydney
   url: https://sydney.edu.au/
-  time: June 2016 - November 2021
+  time: Jun 2016 - Nov 2021
   position: Tutor / Teaching Assistant
+
+- company: Oracle Labs
+  url: https://labs.oracle.com/
+  time: Jan - Mar 2018
+  position: Research Intern
+
+- company: Optiver
+  url: https://optiver.com/
+  time: Dec 2016 - Feb 2017
+  position: Software Developer Intern

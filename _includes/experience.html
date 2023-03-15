@@ -1,15 +1,13 @@
 <section class="section experience">
     <span class="section_title">Experience</span>
 
-    <!-- TODO: make this yaml data -->
-
     <span class="section_content">
         {% for job in site.data.experience %}
 
         <div class="job">
             <div class="job_company_dates">
                 <span class="job_company">
-                    <a class="company_link" href="{{ job.url }}" target="_blank">
+                    <a class="underline_link" href="{{ job.url }}" target="_blank">
                         {{ job.company }}
                     </a>
                 </span>
@@ -18,23 +16,6 @@
             <span class="job_position">{{ job.position }}</span>
         </div>
 
-        <!--
-        <div class="job">
-            <div class="job_company_dates">
-            <span class="job_company">RelationalAI</span>
-            <span class="job_dates">March - June 2021</span>
-            </div>
-            <span class="job_position">Software Engineer Intern</span>
-        </div>
-
-        <div class="job">
-            <div class="job_company_dates">
-            <span class="job_company">University of Sydney</span>
-            <span class="job_dates">June 2016 - November 2021</span>
-            </div>
-            <span class="job_position">Tutor</span>
-        </div>
-        -->
         {% endfor %}
     </span>
 </section>

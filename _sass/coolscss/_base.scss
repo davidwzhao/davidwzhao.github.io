@@ -60,7 +60,7 @@ body {
         // min-width: 500px;
         flex: 4 0 0;
 
-        border-left: 1px solid $off-white;
+        border-left: 1px dashed $orange;
 
         margin-top: 2rem;
         padding-left: 2rem;
@@ -89,12 +89,49 @@ p {
 }
 
 // Font styles
-.emph {
+emph {
     font-style: italic;
 }
 
-.underline_link {
+strong {
     font-style: bold;
-    font-weight: 600;
-    color: $black;
+    font-weight: 700;
+}
+
+a {
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color: $dark-grey;
+}
+
+// .underline_link {
+//     font-style: bold;
+//     font-weight: 600;
+//     color: $black;
+// }
+.underline_link {
+    position: relative;
+    display: inline-block;
+    &:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $black;
+        content: '';
+        opacity: 0;
+        transition: height 0.2s, opacity 0.2s, transform 0.2s;
+        transform: translateY(-10px);
+    }
+    &:hover,
+    &:focus {
+        &:after {
+            height: 1.5px;
+            border-radius: 3px;
+            opacity: 1;
+            transform: translateY(-8px);
+        }
+    }
 }
