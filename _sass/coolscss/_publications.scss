@@ -1,18 +1,18 @@
 .publications {
     .section_content {
         display: grid;
-        gap: 1.2rem 0rem;
+        gap: 0.8rem 0rem;
 
         .publication_year {
+            font-family: Inter;
             font-weight: 700;
-            font-size: 1.4rem;
+            font-size: 0.9rem;
             color: $dark-orange;
             margin-top: 0.8rem;
         }
 
         .publication {
 
-            margin-top: 0.2rem;
             margin-bottom: 0.8rem;
 
             display: grid;
