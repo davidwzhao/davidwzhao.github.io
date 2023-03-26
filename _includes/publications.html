@@ -1,0 +1,20 @@
+<section class="section publications">
+    <span class="section_title">Publications</span>
+
+    <span class="section_content">
+        {% for pub in site.data.publications %}
+
+        <div class="publication">
+            <span class="publication_title">
+                {{ pub.title }}
+                <a class="underline_link" href="{{ pub.url }}" target="_blank">
+                    [pdf]
+                </a>
+            </span>
+            <span class="publication_authors">{{ pub.authors }}</span>
+            <span class="publication_journal">{{ pub.journal }}</span>
+        </div>
+
+        {% endfor %}
+    </span>
+</section>

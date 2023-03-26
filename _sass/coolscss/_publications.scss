@@ -1,0 +1,29 @@
+.publications {
+    .section_content {
+        display: grid;
+        gap: 1.2rem 0rem;
+
+        .publication {
+
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+
+            display: grid;
+
+            // border: 2px solid black;
+
+            .publication_title {
+                font-weight: 700;
+            }
+
+            .publication_authors {
+                font-size: 1rem;
+            }
+
+            .publication_journal {
+                font-size: 0.9rem;
+                color: $slate;
+            }
+        }
+    }
+}
