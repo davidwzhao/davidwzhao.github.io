@@ -2,18 +2,28 @@
     <span class="section_title">Publications</span>
 
     <span class="section_content">
-        {% for pub in site.data.publications %}
-
-        <div class="publication">
-            <span class="publication_title">
-                {{ pub.title }}
-                <a class="underline_link" href="{{ pub.url }}" target="_blank">
-                    [pdf]
-                </a>
-            </span>
-            <span class="publication_authors">{{ pub.authors }}</span>
-            <span class="publication_journal">{{ pub.journal }}</span>
-        </div>
+        {% assign pubs = site.data.publications | sort: 'year' | reverse %}
+        {% for pub in pubs %}
+            {% if forloop.index0 == 0 %}
+                <span class="publication_year">{{ pub.year }}</span>
+            {% else %}
+                {% assign previndex = forloop.index0 | minus: 1 %}
+                {% if pubs[previndex].year != pub.year %}
+                    <span class="publication_year">{{ pub.year }}</span>
+                {% endif %}
+            {% endif %}
+            <div class="publication">
+                <span class="publication_title">
+                    {{ pub.title }}
+                    {% if pub.url %}
+                        <a class="underline_link" href="{{ pub.url }}" target="_blank">
+                            [pdf]
+                        </a>
+                    {% endif %}
+                </span>
+                <span class="publication_authors">{{ pub.authors }}</span>
+                <span class="publication_journal">{{ pub.journal }}</span>
+            </div>
 
         {% endfor %}
     </span>

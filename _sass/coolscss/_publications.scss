@@ -3,9 +3,16 @@
         display: grid;
         gap: 1.2rem 0rem;
 
+        .publication_year {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: $dark-orange;
+            margin-top: 0.8rem;
+        }
+
         .publication {
 
-            margin-top: 0.8rem;
+            margin-top: 0.2rem;
             margin-bottom: 0.8rem;
 
             display: grid;
