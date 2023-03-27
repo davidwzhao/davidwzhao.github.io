@@ -1,4 +1,12 @@
 <div class="header">
+    <div class="header_links">
+        <div class="links">
+            {% for link in site.data.links %}
+                <a class="header_link" href="{{ link.url }}" target="_blank">{{ link.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
     <span class="intro">
         <h1 class="intro_hello">Hello there!</h1>
 

@@ -9,11 +9,17 @@
             font-size: 0.9rem;
             color: $dark-orange;
             margin-top: 0.8rem;
+            margin-left: -0.8rem;
+
+            @media (max-width: $medium-width) {
+                margin-left: -0.4rem;
+            }
         }
 
         .publication {
 
             margin-bottom: 0.8rem;
+            // padding-left: 0.8rem;
 
             display: grid;
 

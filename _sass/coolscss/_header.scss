@@ -3,8 +3,8 @@
 
     width: 100vw;
 
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
     padding-left: 1rem;
     padding-right: 1rem;
 
@@ -12,7 +12,38 @@
 
     font-family: Inter;
 
+    .header_links {
+        // display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+
+        .links {
+            float: right;
+            display: flex;
+            gap: 1.4rem;
+
+            padding: 0.8rem;
+            margin-right: 0.8rem;
+
+            background-color: $blue;
+
+            .header_link {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+
+                color: $off-white;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
     .intro {
+        padding-top: 6rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -20,10 +51,10 @@
 
         .intro_hello {
             width: 90%;
-            font-size: 5rem;
+            font-size: 4.8rem;
             font-weight: 200;
 
-            margin-bottom: 7rem;
+            margin-bottom: 4rem;
         }
 
         .intro_paragraph {
