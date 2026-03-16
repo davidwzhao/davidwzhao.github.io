@@ -31,7 +31,7 @@ body {
     max-width: 1200px;
 
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // align-items: stretch;
 
     @media (max-width: $medium-width) {
@@ -91,6 +91,10 @@ p {
 // Font styles
 .emph {
     font-style: italic;
+}
+
+.ul {
+    text-decoration: underline;
 }
 
 strong {

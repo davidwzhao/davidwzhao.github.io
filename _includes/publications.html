@@ -21,7 +21,7 @@
                         </a>
                     {% endif %}
                 </span>
-                <span class="publication_authors">{{ pub.authors }}</span>
+                <span class="publication_authors">{{ pub.authors | replace: "David Zhao", '<span class="ul">David Zhao</span>' }}</span>
                 <span class="publication_journal">{{ pub.journal }}</span>
             </div>
 
