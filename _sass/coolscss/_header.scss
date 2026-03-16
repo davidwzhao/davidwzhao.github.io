@@ -51,11 +51,42 @@
         max-width: 1200px;
 
         .intro_hello {
+
+            display: flex;
             width: 90%;
-            font-size: 4.8rem;
-            font-weight: 200;
+            align-items: center;
 
             margin-bottom: 4rem;
+
+            @media (max-width: $medium-width) {
+                display: block;
+            }
+
+            .intro_hello_pic {
+                flex: 1 0 0;
+                max-width: 160px;
+                max-height: 160px;
+                border-radius: 50%;
+
+                @media (max-width: $medium-width) {
+                    max-width: 120px;
+                    max-height: 120px;
+                    margin-left: 50%;
+                }
+            }
+
+            .intro_hello_text {
+                flex: 4 0 0;
+                font-size: 5rem;
+                font-weight: 700;
+
+                margin-left: 2rem;
+
+                @media (max-width: $medium-width) {
+                    margin-left: 0;
+                    margin-top: 2rem;
+                }
+            }
         }
 
         .intro_paragraph {
