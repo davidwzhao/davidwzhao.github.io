@@ -1,3 +1,9 @@
+- title: 'Rel: A Programming Language for Relational Data'
+  url: pdf/SIGMOD2025.pdf
+  authors: Molham Aref, Paolo Guagliardo, George Kastrinis, Leonid Libkin, Victor Marsault, Wim Martens, Mary McGrath, Filip Murlak, Nathaniel Nystrom, Liat Peterfreund, Allison Rogers, Cristina Sirangelo, Domagoj Vrgoč, David Zhao, Abdul Zreika
+  journal: SIGMOD
+  year: 2025
+
 - title: 'Automatic Rollback Suggestions for Incremental Datalog Evaluation'
   url: pdf/PADL2023.pdf
   authors: David Zhao, Pavle Subotić, Mukund Raghothaman, Bernhard Scholz
