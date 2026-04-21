@@ -16,15 +16,7 @@
 
   function updateIcon(theme) {
     const icon = document.getElementById('theme_icon');
-    console.log("what is icon??", icon);
     if (icon) icon.textContent = ICONS[theme];
-  }
-
-  function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'auto';
-    console.log("what is saved theme?", savedTheme);
-    applyTheme(savedTheme);
-    updateIcon(savedTheme);
   }
 
   function cycleTheme() {
@@ -37,6 +29,10 @@
     updateIcon(nextTheme);
   }
 
+  // Apply theme immediately to prevent flash (before DOM loads)
+  const savedTheme = localStorage.getItem('theme') || 'auto';
+  applyTheme(savedTheme);
+
   // Listen for system theme changes when in auto mode
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     if (localStorage.getItem('theme') === 'auto') {
@@ -44,14 +40,16 @@
     }
   });
 
-  // Set up toggle button click handler when DOM is ready
+  // Set up toggle button and update icon when DOM is ready
   document.addEventListener('DOMContentLoaded', () => {
+    // Update icon now that DOM is loaded
+    const savedTheme = localStorage.getItem('theme') || 'auto';
+    updateIcon(savedTheme);
+
+    // Set up toggle button click handler
     const toggle = document.getElementById('theme_toggle');
     if (toggle) {
       toggle.addEventListener('click', cycleTheme);
     }
   });
-
-  // Initialize theme on page load
-  initTheme();
 })();
