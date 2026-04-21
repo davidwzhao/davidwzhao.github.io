@@ -1,69 +1,45 @@
 // Colors
-$night: #171c28;
-$black: #36363c;
-$dark-grey: #444452;
-$grey: #777777;
-$blue: #1a87cf;
-$slate: #afafbf;
-$off-white: #e7e7e7;
 $white: #ffffff;
-$green: #bae67e;
-$purple: #7d0ce8;
-$red: #ff0000;
-$orange: #FFB87E;
-$dark-orange: #F8A43A;
-$yellow: #ffdc00;
-$accent: #ffcc66;
+$slate: #afafbf;
+$black: #00202e;
+$midnight-blue: #003f5c;
+$dark-indigo: #2c4875;
+$violet: #8a508f;
+$fuschia: #bc5090;
+$coral: #ff6361;
+$orange: #ff8531;
+$yellow: #ffa600;
+$lemon: #ffd380;
+$off-white: #ffe9c0;
 
-$cyan: #00AEEF;
-$cyan-background: #A0E2FF;
-
-// CSS Custom Properties for theming
 :root {
   // Light mode (default)
-  --bg-color: #{$white};              // #ffffff
-  --text-color: #{$dark-grey};        // #444452
-  --heading-color: #{$blue};          // #2087ef
-  --secondary-text: #{$slate};        // #afafbf
-  --header-bg: #{$cyan-background};   // #A0E2FF
-  --header-link: #{$off-white};       // #e7e7e7
-  --header-link-hover: #{$black};     // #36363c
-  --border-color: #{$orange};         // #FFB87E
-  --link-underline: #{$black};        // #36363c
-  --year-label: #{$dark-orange};      // #F8A43A
-  --links-bg: #{$blue};               // #2087ef
+  --bg-color: #{$white};
+  --text-color: #{$midnight-blue};
+  --heading-color: #{$coral};
+  --secondary-text: #{$violet};
+  --header-bg: #{$lemon};
+  --header-link: #{$off-white};
+  --header-link-hover: #{$midnight-blue};
+  --border-color: #{$violet};
+  --link-underline: #{$black};
+  --year-label: #{$violet};
+  --links-bg: #{$orange};
 }
 
 [data-theme="dark"] {
   // Dark mode
-  --bg-color: #{$night};              // #171c28
-  --text-color: #e0e0e0;
-  --heading-color: #4fa3ff;           // Lighter blue for contrast
-  --secondary-text: #9999b0;
-  --header-bg: #2a3167;               // Dark grey-blue
-  --header-link: #d1d5db;
-  --header-link-hover: #f3f4f6;
-  --border-color: #ffa366;            // Slightly lighter orange
-  --link-underline: #9ca3af;
-  --year-label: #fbbf24;
-  --links-bg: #374151;
-}
-
-// System preference: auto-apply dark mode if preferred
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg-color: #{$night};
-    --text-color: #e0e0e0;
-    --heading-color: #4fa3ff;
-    --secondary-text: #9999b0;
-    --header-bg: #2a3167;
-    --header-link: #d1d5db;
-    --header-link-hover: #f3f4f6;
-    --border-color: #ffa366;
-    --link-underline: #9ca3af;
-    --year-label: #fbbf24;
-    --links-bg: #374151;
-  }
+  --bg-color: #{$black};
+  --text-color: #{$off-white};
+  --heading-color: #{$orange};
+  --secondary-text: #{$lemon};
+  --header-bg: #{$midnight-blue};
+  --header-link: #{$midnight-blue};
+  --header-link-hover: #{$off-white};
+  --border-color: #{$yellow};
+  --link-underline: #{$off-white};
+  --year-label: #{$coral};
+  --links-bg: #{$coral};
 }
 
 // Screen widths
