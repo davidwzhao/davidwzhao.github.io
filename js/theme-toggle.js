@@ -16,11 +16,13 @@
 
   function updateIcon(theme) {
     const icon = document.getElementById('theme_icon');
+    console.log("what is icon??", icon);
     if (icon) icon.textContent = ICONS[theme];
   }
 
   function initTheme() {
     const savedTheme = localStorage.getItem('theme') || 'auto';
+    console.log("what is saved theme?", savedTheme);
     applyTheme(savedTheme);
     updateIcon(savedTheme);
   }
@@ -34,9 +36,6 @@
     applyTheme(nextTheme);
     updateIcon(nextTheme);
   }
-
-  // Initialize theme on page load
-  initTheme();
 
   // Listen for system theme changes when in auto mode
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
@@ -52,4 +51,7 @@
       toggle.addEventListener('click', cycleTheme);
     }
   });
+
+  // Initialize theme on page load
+  initTheme();
 })();
