@@ -3,7 +3,7 @@
   'use strict';
 
   const THEMES = ['light', 'dark', 'auto'];
-  const ICONS = { light: '☀️', dark: '🌙', auto: '🌓' };
+  const ICONS = { light: '🔆', dark: '🌙', auto: '🌓' };
 
   function getSystemTheme() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -15,7 +15,7 @@
   }
 
   function updateIcon(theme) {
-    const icon = document.getElementById('theme-icon');
+    const icon = document.getElementById('theme_icon');
     if (icon) icon.textContent = ICONS[theme];
   }
 
@@ -47,7 +47,7 @@
 
   // Set up toggle button click handler when DOM is ready
   document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('theme-toggle');
+    const toggle = document.getElementById('theme_toggle');
     if (toggle) {
       toggle.addEventListener('click', cycleTheme);
     }

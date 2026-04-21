@@ -45,6 +45,37 @@
         }
     }
 
+    .theme_toggle {
+        // Icons managed by JavaScript (see js/theme-toggle.js):
+        // ☀️ = light mode
+        // 🌙 = dark mode
+        // 🌓 = system/auto mode
+
+        background: none;
+        font-family: NotoEmoji;
+        color: var(--header-link);
+        font-size: 0.8rem;
+
+        border: 0;
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            color: var(--header-link-hover);
+        }
+
+        .theme_icon {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        &:active .theme_icon {
+            transform: rotate(180deg);
+        }
+    }
+
     .intro {
         padding-top: 6rem;
         display: block;
