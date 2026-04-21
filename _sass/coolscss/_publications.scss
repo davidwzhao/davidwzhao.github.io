@@ -7,7 +7,7 @@
             font-family: Inter;
             font-weight: 700;
             font-size: 0.9rem;
-            color: $dark-orange;
+            color: var(--year-label);
             margin-top: 0.8rem;
             margin-left: -0.8rem;
 
@@ -35,7 +35,7 @@
 
             .publication_journal {
                 font-size: 0.9rem;
-                color: $slate;
+                color: var(--secondary-text);
             }
         }
     }

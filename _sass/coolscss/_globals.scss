@@ -18,6 +18,53 @@ $accent: #ffcc66;
 $cyan: #00AEEF;
 $cyan-background: #A0E2FF;
 
+// CSS Custom Properties for theming
+:root {
+  // Light mode (default)
+  --bg-color: #{$white};              // #ffffff
+  --text-color: #{$dark-grey};        // #444452
+  --heading-color: #{$blue};          // #2087ef
+  --secondary-text: #{$slate};        // #afafbf
+  --header-bg: #{$cyan-background};   // #A0E2FF
+  --header-link: #{$off-white};       // #e7e7e7
+  --header-link-hover: #{$black};     // #36363c
+  --border-color: #{$orange};         // #FFB87E
+  --link-underline: #{$black};        // #36363c
+  --year-label: #{$dark-orange};      // #F8A43A
+  --links-bg: #{$blue};               // #2087ef
+}
+
+[data-theme="dark"] {
+  // Dark mode
+  --bg-color: #{$night};              // #171c28
+  --text-color: #e0e0e0;
+  --heading-color: #4fa3ff;           // Lighter blue for contrast
+  --secondary-text: #9999b0;
+  --header-bg: #1f2937;               // Dark grey-blue
+  --header-link: #d1d5db;
+  --header-link-hover: #f3f4f6;
+  --border-color: #ffa366;            // Slightly lighter orange
+  --link-underline: #9ca3af;
+  --year-label: #fbbf24;
+  --links-bg: #374151;
+}
+
+// System preference: auto-apply dark mode if preferred
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-color: #{$night};
+    --text-color: #e0e0e0;
+    --heading-color: #4fa3ff;
+    --secondary-text: #9999b0;
+    --header-bg: #1f2937;
+    --header-link: #d1d5db;
+    --header-link-hover: #f3f4f6;
+    --border-color: #ffa366;
+    --link-underline: #9ca3af;
+    --year-label: #fbbf24;
+    --links-bg: #374151;
+  }
+}
 
 // Screen widths
 $medium-width: 1007px;

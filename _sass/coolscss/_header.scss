@@ -1,5 +1,6 @@
 .header {
-    background-color: $cyan-background;
+    background-color: var(--header-bg);
+    transition: background-color 0.3s ease;
 
     width: 100vw;
 
@@ -26,18 +27,19 @@
             padding: 0.6rem 0.7rem 0.6rem 0.7rem;
             margin-right: 0.8rem;
 
-            background-color: $blue;
+            background-color: var(--links-bg);
             border-radius: 4px;
+            transition: background-color 0.3s ease;
 
             .header_link {
                 text-transform: uppercase;
                 font-size: 1.2rem;
 
-                color: $off-white;
+                color: var(--header-link);
                 transition: color 0.3s;
 
                 &:hover {
-                    color: $black;
+                    color: var(--header-link-hover);
                 }
             }
         }
