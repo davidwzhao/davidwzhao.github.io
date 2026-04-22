@@ -126,21 +126,56 @@
         .intro_paragraph {
             font-size: 2rem;
             font-weight: 300;
+            line-height: 1.8;
 
-            width: 50%;
-
-            @media (max-width: $medium-width) {
-                width: 70%;
-            }
+            width: 70%;
 
             @media (max-width: $small-width) {
                 width: 90%;
             }
 
-            line-height: 1.8;
-
             .name {
                 font-weight: 700;
+            }
+
+            .title_carousel {
+                display: inline-block;
+                vertical-align: top;
+                height: 3.6rem; // Match paragraph line-height (2rem × 1.8)
+                overflow: hidden;
+                position: relative;
+
+                .title_carousel_track {
+                    display: flex;
+                    flex-direction: column;
+                    animation: scroll_titles 8s linear infinite;
+
+                    &:hover {
+                        animation-play-state: paused; // Pause on hover
+                    }
+
+                    .title {
+                        display: block;
+                        /* height: 3.6rem; */
+                        /* line-height: 3.6rem; */
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            @keyframes scroll_titles {
+                0%, 30% {
+                    transform: translateY(0); // Pause on title 1
+                }
+                33%, 63% {
+                    transform: translateY(-16.67%); // Pause on title 2
+                }
+                66%, 96% {
+                    transform: translateY(-33.33%); // Pause on title 3
+                }
+                100% {
+                    transform: translateY(-50%); // Quick scroll back to start
+                }
             }
         }
     }
