@@ -186,18 +186,24 @@
                 }
             }
 
+            // Carousel configuration - change $num-items to match your list
+            $num-items: 4;
+            $segment-duration: 100% / $num-items;
+            $transition-duration: 3%;
+            $pause-duration: $segment-duration - $transition-duration;
+
             @keyframes scroll_titles {
-                0%, 30% {
-                    transform: translateY(0); // Pause on title 1
-                }
-                33%, 63% {
-                    transform: translateY(-16.67%); // Pause on title 2
-                }
-                66%, 96% {
-                    transform: translateY(-33.33%); // Pause on title 3
+                @for $i from 0 through ($num-items - 1) {
+                    $start-percent: $i * $segment-duration;
+                    $pause-end-percent: $start-percent + $pause-duration;
+                    $position: -$i * (50% / $num-items);
+
+                    #{$start-percent}, #{$pause-end-percent} {
+                        transform: translateY($position);
+                    }
                 }
                 100% {
-                    transform: translateY(-50%); // Quick scroll back to start
+                    transform: translateY(-50%); // Return to start for seamless loop
                 }
             }
         }
