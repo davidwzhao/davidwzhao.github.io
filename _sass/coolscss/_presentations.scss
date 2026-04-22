@@ -1,41 +1,29 @@
-.experience {
+.presentations {
     .section_content {
         display: grid;
         gap: 1.2rem 0rem;
 
-        .job {
+        .presentation {
             margin-top: 0.8rem;
             margin-bottom: 0.8rem;
 
-            // border: 2px solid black;
-
-            .job_company_dates {
+            .presentation_title_year {
                 display: flex;
                 justify-content: space-between;
-                // line-height: 1.8;
 
                 @media (max-width: $small-width) {
                     display: grid;
                 }
 
-                .job_dates {
-                    // float: right;
-
-                    // font-family: Inconsolata;
-                    // font-weight: 400;
+                .presentation_year {
                     font-size: 0.9rem;
-
                     color: var(--secondary-text);
                 }
             }
 
-            .job_position {
-                // margin-top: 2rem;
-                // margin-bottom: 0.8em;
-
-                // float: left;
-                // clear: left;
-
+            .presentation_subtitle {
+                /* font-style: italic; */
+                /* color: var(--secondary-text); */
             }
         }
     }

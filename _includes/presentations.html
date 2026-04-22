@@ -1,0 +1,25 @@
+<section class="section presentations">
+    <span class="section_title">Presentations</span>
+
+    <span class="section_content">
+        {% for presentation in site.data.presentations %}
+
+        <div class="presentation">
+            <div class="presentation_title_year">
+                <span class="presentation_title">
+                    {% if presentation.url %}
+                    <a class="underline_link" href="{{ presentation.url }}" target="_blank">
+                        {{ presentation.title }}
+                    </a>
+                    {% else %}
+                    {{ presentation.title }}
+                    {% endif %}
+                </span>
+                <span class="presentation_year">{{ presentation.year }}</span>
+            </div>
+            <span class="presentation_subtitle">{{ presentation.subtitle }}</span>
+        </div>
+
+        {% endfor %}
+    </span>
+</section>
