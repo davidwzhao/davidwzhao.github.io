@@ -14,13 +14,14 @@
             .presentation_title_year {
                 display: flex;
                 justify-content: space-between;
+                align-items: flex-end;
 
                 @media (max-width: $small-width) {
                     display: grid;
                 }
 
                 .presentation_year {
-                    font-size: 0.9rem;
+                    font-size: 1.0rem;
                     color: var(--secondary-text);
                 }
             }

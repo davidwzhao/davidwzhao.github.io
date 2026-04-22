@@ -12,6 +12,7 @@
             .job_company_dates {
                 display: flex;
                 justify-content: space-between;
+                align-items: flex-end;
                 // line-height: 1.8;
 
                 @media (max-width: $small-width) {
@@ -23,7 +24,7 @@
 
                     // font-family: Inconsolata;
                     // font-weight: 400;
-                    font-size: 0.9rem;
+                    font-size: 1.0rem;
 
                     color: var(--secondary-text);
                 }

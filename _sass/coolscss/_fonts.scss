@@ -16,28 +16,40 @@
 }
 
 @font-face {
-    font-family: "Charter";
-    src: url('../fonts/Charter/ttf/Charter Regular.ttf') format('truetype');
+    font-family: "Outfit";
+    src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IBM_Plex_Serif";
+    src: url('../fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Charter";
-    src: url('../fonts/Charter/ttf/Charter Bold.ttf') format('truetype');
-    font-style: bold;
+    font-family: "IBM_Plex_Serif";
+    src: url('../fonts/IBM_Plex_Serif/IBMPlexSerif-SemiBold.ttf') format('truetype');
+    font-weight: 500;
 }
 
 @font-face {
-    font-family: "Charter";
-    src: url('../fonts/Charter/ttf/Charter Italic.ttf') format('truetype');
+    font-family: "IBM_Plex_Serif";
+    src: url('../fonts/IBM_Plex_Serif/IBMPlexSerif-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "IBM_Plex_Serif";
+    src: url('../fonts/IBM_Plex_Serif/IBMPlexSerif-Italic.ttf') format('truetype');
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Merriweather";
-    src: url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    font-family: "IBM_Plex_Serif";
+    src: url('../fonts/IBM_Plex_Serif/IBMPlexSerif-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
