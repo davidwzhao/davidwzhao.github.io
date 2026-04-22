@@ -115,6 +115,7 @@
             @media (max-width: $medium-width) {
                 /* display: block; */
                 flex-direction: column;
+                width: 100%;
             }
 
             .intro_hello_pic {
