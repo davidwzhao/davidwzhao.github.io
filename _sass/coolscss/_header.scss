@@ -32,7 +32,7 @@
             padding: 0.6rem 0.7rem 0.6rem 0.7rem;
             margin-right: 0.8rem;
 
-            @media (max-width: $small-width) {
+            @media (max-width: $very-small-width) {
                 flex-direction: column;
                 gap: 0.6rem;
                 padding: 0.5rem 0.4rem 0.5rem 0.4rem;
@@ -50,7 +50,7 @@
 
                 color: var(--header-link);
 
-                @media (max-width: $small-width) {
+                @media (max-width: $very-small-width) {
                     text-align: right;
                 }
 
@@ -83,7 +83,7 @@
                 transition: all 0.3s ease;
 
                 &:hover {
-                    /* transform: scale(1.1); */
+                    transform: scale(1.1);
                     color: var(--header-link-hover);
                 }
 
@@ -92,9 +92,9 @@
                     transition: transform 0.3s ease;
                 }
 
-                /* &:active .theme_icon { */
-                /*     transform: rotate(180deg); */
-                /* } */
+                &:active .theme_icon {
+                    transform: rotate(180deg);
+                }
             }
         }
     }
