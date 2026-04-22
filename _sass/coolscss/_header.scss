@@ -76,6 +76,8 @@
                 text-align: right;
 
                 border: 0;
+                padding: 0;
+                margin: 0;
                 cursor: pointer;
 
                 transition: all 0.3s ease;
@@ -86,7 +88,7 @@
                 }
 
                 .theme_icon {
-                    display: inline-block;
+                    /* display: inline-block; */
                     transition: transform 0.3s ease;
                 }
 
@@ -134,7 +136,7 @@
             .intro_hello_text {
                 flex: 4 0 0;
                 font-size: 5rem;
-                font-weight: 700;
+                font-weight: 900;
 
                 margin-left: 2rem;
 
@@ -159,7 +161,7 @@
             }
 
             .name {
-                font-weight: 700;
+                font-weight: 600;
             }
 
             .title_carousel {

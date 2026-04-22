@@ -4,9 +4,9 @@
         gap: 0.8rem 0rem;
 
         .publication_year {
-            font-family: Inter;
+            font-family: Outfit;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 1.0rem;
             color: var(--year-label);
             margin-top: 0.8rem;
             margin-left: -0.8rem;
@@ -34,7 +34,9 @@
             }
 
             .publication_journal {
+                font-family: Inter;
                 font-size: 0.9rem;
+                font-weight: 500;
                 color: var(--secondary-text);
             }
         }
