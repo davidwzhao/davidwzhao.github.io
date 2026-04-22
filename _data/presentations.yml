@@ -1,4 +1,11 @@
-- title: Advanced Compiler Optimizations
-  subtitle: LLVM Developers' Meeting
-  year: 2024
-  url: https://example.com
+- title: First Order Logic, Datalog, Rel, and Real-World Applications
+  subtitle: Guest Lecture in COMP2022 at the University of Sydney
+  year: "2024, 2025"
+
+- title: "Debugging Large-Scale Datalog: A Scalable Provenance Evaluation Strategy"
+  subtitle: Presented at POPL
+  year: "2021"
+
+- title: Incremental Datalog Prototype in Soufflé
+  subtitle: Presented at the Second Workshop on Incremental Computing (IC)
+  year: "2019"
