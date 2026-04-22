@@ -16,7 +16,7 @@
                 justify-content: space-between;
                 align-items: flex-end;
 
-                @media (max-width: $small-width) {
+                @media (max-width: $medium-width) {
                     display: grid;
                 }
 

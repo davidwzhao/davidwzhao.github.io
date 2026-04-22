@@ -1,6 +1,6 @@
 // Colors
 $white: #ffffff;
-$slate: #afafbf;
+$slate: #9fafbf;
 $black: #00202e;
 $midnight-blue: #003f5c;
 $dark-indigo: #2c4875;
@@ -25,6 +25,7 @@ $off-white: #ffe9c0;
   --link-underline: #{$black};
   --year-label: #{$fuschia};
   --links-bg: #{$orange};
+  --footer-text: #{$slate};
 }
 
 [data-theme="dark"] {
@@ -40,6 +41,7 @@ $off-white: #ffe9c0;
   --link-underline: #{$off-white};
   --year-label: #{$coral};
   --links-bg: #{$coral};
+  --footer-text: #{$dark-indigo};
 }
 
 // Screen widths

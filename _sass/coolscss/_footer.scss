@@ -1,0 +1,23 @@
+.footer {
+    width: 100vw;
+    padding: 0rem 1rem;
+    margin-top: 8rem;
+
+    font-family: IBM_Plex_Serif;
+    text-align: center;
+
+    .footer_text {
+        font-size: 1rem;
+        color: var(--footer-text);
+        margin: 0;
+
+        .footer_name {
+            font-weight: 600;
+            /* color: var(--primary-text); */
+        }
+
+        a {
+            color: var(--footer-text);
+        }
+    }
+}
